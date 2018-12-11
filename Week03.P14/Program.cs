@@ -18,6 +18,8 @@ namespace Week03.P14
             var node4 = list.AddAfter(node3, 4);
             var node5 = list.AddAfter(node4, 5);
 
+            list.Print();
+
             var last3RdNode = list.Find3RdElementFromEnd();
 
             Console.WriteLine(last3RdNode.Value);

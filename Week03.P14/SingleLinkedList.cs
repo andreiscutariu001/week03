@@ -34,6 +34,8 @@ namespace Week03.P14
 
                 currentNode = currentNode.Next;
             }
+
+            Console.WriteLine();
         }
 
         public Node Find3RdElementFromEnd()
