@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Week04.Code\Week04.Code.csproj" />
+    <ProjectReference Include="..\Week04.Hotel\Week04.HotelApp.csproj" />
+  </ItemGroup>
+
+</Project>
