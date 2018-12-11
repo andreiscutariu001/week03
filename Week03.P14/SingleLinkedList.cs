@@ -14,6 +14,7 @@ namespace Week03.P14
 
             return node;
         }
+
         public Node AddAfter(Node node, int val)
         {
             var newNode = new Node {Value = val};
@@ -33,6 +34,23 @@ namespace Week03.P14
 
                 currentNode = currentNode.Next;
             }
+        }
+
+        public Node Find3RdElementFromEnd()
+        {
+            var currentNode = _first;
+
+            while (currentNode != null)
+            {
+                if (currentNode.Next.Next.Next == null) // Check 3rd node to be null
+                {
+                    return currentNode;
+                }
+
+                currentNode = currentNode.Next;
+            }
+
+            return _first;
         }
     }
 }
